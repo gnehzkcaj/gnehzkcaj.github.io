@@ -8,7 +8,7 @@ const myImage = document.querySelector("img");
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
   if (mySrc === "images/firefox-icon.png") {
-    myImage.setAttribute("src", "images/logo.svg");
+    myImage.setAttribute("src", "images/react-logo.svg");
   } else {
     myImage.setAttribute("src", "images/firefox-icon.png");
   }

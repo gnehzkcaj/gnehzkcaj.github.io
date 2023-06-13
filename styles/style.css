@@ -42,9 +42,11 @@ h1 {
 
 
 button {
+  color: yellow;
   position: relative;
-  width: 120px;
-  height: 60px;
+  width: 200px;
+  height: 100px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 30px;
+  background-image: url("https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg");
 }

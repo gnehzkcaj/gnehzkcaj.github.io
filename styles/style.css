@@ -35,7 +35,7 @@ h1 {
   text-shadow: 3px 3px 1px black;
 }
 
-img {
+.my-logo-class {
   display: block;
   margin: 0 auto;
 }

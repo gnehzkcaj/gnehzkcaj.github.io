@@ -1,0 +1,59 @@
+<!--
+https://cssarrowplease.com/
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 600px;
+            height: 600px;
+            margin: 50px;
+        }
+        .arrow_box {
+            position: relative;
+            background: #88b7d5;
+            border: 4px solid #c2e1f5;
+        }
+
+        .arrow_box:after,
+        .arrow_box:before {
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .arrow_box:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: #88b7d5;
+            border-width: 30px;
+            margin-left: -30px;
+        }
+
+        .arrow_box:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: #c2e1f5;
+            border-width: 36px;
+            margin-left: -36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="arrow_box">Content in the box in my HTML page.</p>
+    </div>
+    
+</body>
+
+</html>
